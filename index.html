@@ -1,26 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Haktan Ongun - Map Portfolio</title>
-  <style>
-    body { font-family: Arial; margin: 40px; }
-    img { width: 100%; max-width: 800px; margin-bottom: 30px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haktan Ongun | Data Visualization Portfolio</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 40px; background-color: #f9f9f9; }
+        h1 { border-bottom: 2px solid #2c3e50; padding-bottom: 10px; color: #2c3e50; }
+        h2 { margin-top: 50px; color: #2c3e50; }
+        .project-description { margin-bottom: 20px; color: #555; font-style: italic; }
+        .tech-stack { font-size: 0.9em; color: #777; margin-bottom: 10px; }
+        img { width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white; }
+        section { margin-bottom: 60px; }
+    </style>
 </head>
-
 <body>
 
-<h2>EU Voter Turnout (2014–2024)</h2>
-<p>This map shows differences in voter participation across EU countries. One of the first maps that I created</p>
-<img src="maps/eu_turnout.svg">
+    <header>
+        <h1>Haktan Ongun</h1>
+        <p><strong>Quantitative Economics & Policy Analysis</strong></p>
+        <p>Visualizing complex datasets through spatial analysis and econometric modeling.</p>
+    </header>
 
-<h2>Internal Displacement </h2>
-<p>This map shows regional patterns of internally displaced populations using two quantitative variables represented through different visual elements.</p>
-<img src="maps/idp_map.svg">
+    <hr>
 
-<h2>Global CO2 emissions</h2>
-<p>This map shows clear distinction of total and per-capita CO2 emissions. Visually showing outliers while keeping target audiance in mind. This map is one of my latest works.</p>
-<img src="maps/global_emissions.svg">
+    <section>
+        <h2>EU Voter Turnout (2014–2024)</h2>
+        <p class="tech-stack"><strong>Tools:</strong> R (tidyverse, sf), Eurostat Data</p>
+        <p class="project-description">
+            A longitudinal analysis of democratic participation across the European Union. This map highlights regional disparities in voter engagement, providing a visual foundation for studying political behavior in member states.
+        </p>
+        <img src="maps/eu_turnout.svg" alt="Map of EU Voter Turnout">
+    </section>
+
+    <section>
+        <h2>Internal Displacement Dynamics</h2>
+        <p class="tech-stack"><strong>Tools:</strong> R, Spatial Econometrics, ggplot2</p>
+        <p class="project-description">
+            Using bivariate mapping techniques, this project visualizes the relationship between conflict intensity and internally displaced populations. It aims to identify high-pressure zones where humanitarian resources are most critical.
+        </p>
+        <img src="maps/idp_map.svg" alt="Map of Internal Displacement Patterns">
+    </section>
+
+    <section>
+        <h2>Global CO2 Emissions: Per-Capita vs. Total</h2>
+        <p class="tech-stack"><strong>Tools:</strong> R (tidyr), World Bank Data</p>
+        <p class="project-description">
+            A comparative spatial study distinguishing between high aggregate emitters and high per-capita emitters. This visualization clarifies the "responsibility gap" in global climate policy by highlighting outliers in carbon efficiency.
+        </p>
+        <img src="maps/global_emissions.svg" alt="Global CO2 Emissions Map">
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Haktan Ongun</p>
+    </footer>
 
 </body>
 </html>
